@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Java Script</title>
+	<script>
+		var ten = 1;
+		var math1 = function() {
+			if (ten !== 1000000) {
+				ten *= 10;
+				alert("number times 10, now is " + ten);
+			} else 
+				{
+					alert("The number is too big");
+				}
+
+		}
+
+		var math2 = function() {
+			if (ten !== 0.0001) {	
+				ten /= 10;
+				alert("number divide 10, now is " + ten);
+			} else 
+				{
+					alert("The number is too small");
+				}	
+		}
+
+		var math3 = function() {
+			
+			for (var x = 9; x >= 0; x--) {
+			alert("Hi");	
+			}
+			alert("enough");
+		}
+	</script>
+</head>
+<body>
+	<button type = "button" onclick="math1()">times 10</button>
+	<br>	
+	<button type = "button" onclick="math2()">divide 10</button>
+	<br>
+	<button type = "button" onclick="math3()">Say hi</button>
+</body>
+</html>
